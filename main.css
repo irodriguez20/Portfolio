@@ -3,33 +3,28 @@
 }
 
 body {
-    font-size: 20px;
+    font-size: 16px;
     color: black;
     text-align: center;
     line-height: 1.5;
 }
 
-footer {
-    font-family: 'Ovo', serif;
-    padding: 1% 0;
-    background-color: gray;
-    line-height: .5;
+.intro header {
+    font-size: 30px;
 }
-footer ul {
-    font-size: 17px;
-}
-footer .items {
-    list-style: none;
+.intro p {
+    font-size: 19px;
 }
 
 header {
-    font-family: 'Ovo', serif;
+    font-family: 'Gayathri', sans-serif;
     font-size: 20px;
 }
 
 .wrapper p {
     font-family: 'Muli', sans-serif;
     font-size: 17px; 
+    line-height: .5;
 }
 
 section #first {
@@ -44,4 +39,31 @@ section:nth-child(even) {
 
 form .actions {
     list-style: none;
+}
+
+form input {
+    border-color: rgba(128, 128, 128, 0.801);
+    border-radius: 3px;
+    border-width: 1px;
+}
+
+form textarea {
+    border-color: rgba(128, 128, 128, 0.801);
+    border-radius: 3px;
+    border-width: 1px;
+}
+
+footer {
+    font-family: 'Gayathri', sans-serif;
+    padding: 1% 0;
+    background-color: gray;
+    line-height: .2;
+}
+footer ul {
+    font-size: 17px;
+    line-height: .5;
+}
+footer .items {
+    list-style: none;
+    line-height: .3;
 }
