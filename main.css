@@ -97,7 +97,7 @@ footer ul {
 
 @media screen and (min-width: 600px) {
     .intro {
-        background-color: aqua;
+        /* background-color: aqua; */
         display: block;
         text-align: left;
     }
@@ -162,9 +162,9 @@ footer ul {
         font-size: 22px;
     }
 
-    .intro {
+    /* .intro {
         background-color: blue;
-    }
+    } */
 
     .content {
         display: flex;
