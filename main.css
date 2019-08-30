@@ -22,7 +22,7 @@ body {
     margin: 0;
     padding: 0;
     font-size: 16px;
-    color: black;
+    color: #07292e;
     text-align: center;
     line-height: 1.5;
     vertical-align: baseline;
@@ -30,10 +30,6 @@ body {
 
 body {
 	-webkit-text-size-adjust: none;
-}
-
-@-ms-viewport {
-    width: device-width;
 }
 
 body {
@@ -44,6 +40,13 @@ ul {
     list-style: none;
 }
 
+html {
+    background-color: #e9d2c4;
+}
+
+.intro {
+    background-color: #e84e3e;
+}
 .intro header {
     font-size: 30px;
 }
@@ -52,7 +55,21 @@ ul {
 }
 .intro img {
     width: 100%;
+    padding: 0;
+    margin-bottom: 0;
 }
+
+.imageMain img {
+    width: 100%;
+}
+
+.gallery img {
+    width: 100%;
+}
+
+/* #aboutMe {
+    background-color: #a9af8d;
+} */
 
 header {
     font-family: 'Gayathri', sans-serif;
@@ -72,17 +89,16 @@ h3 {
 section {
     min-height: 200px;
     padding: 6% 0;
-    background-color: #bbb;
 }
 
-section:nth-child(even) {
-    background-color: #ddd;
-}
+/* #projects {
+    background-color: #a9af8d;
+} */
 
 footer {
     position: absolute;
     font-family: 'Gayathri', sans-serif;
-    background-color: gray;
+    background-color: #e9d2c4;
     bottom: 0%;
     width: 100%;
 }
@@ -96,10 +112,16 @@ footer ul {
 
 
 @media screen and (min-width: 600px) {
+    html {
+        background-color: #e9d2c4;
+    }
     .intro {
-        /* background-color: aqua; */
         display: block;
         text-align: left;
+    }
+
+    .intro header {
+        background-color: #e84e3e;
     }
 
     .wrapper p {
@@ -127,7 +149,7 @@ footer ul {
         display: flex;
         flex-direction: column;
         align-content: center;
-        margin-left: 30px;
+        
     }
 
     h3 {
@@ -145,6 +167,10 @@ footer ul {
 }
 
 @media screen and (min-width: 980px) {
+    html {
+        background-color: #e9d2c4;
+    }
+
     header {
         float: left;
         width: 50%;
@@ -162,9 +188,9 @@ footer ul {
         font-size: 22px;
     }
 
-    /* .intro {
-        background-color: blue;
-    } */
+    h1, .intro p {
+        background: #e84e3e;
+    } 
 
     .content {
         display: flex;
