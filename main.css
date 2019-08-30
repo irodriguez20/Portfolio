@@ -3,8 +3,6 @@
 }
 
 body {
-    font-family: "Open Sans",
-    sans-serif;
     font-size: 20px;
     color: black;
     text-align: center;
@@ -12,12 +10,26 @@ body {
 }
 
 footer {
+    font-family: 'Ovo', serif;
     padding: 1% 0;
     background-color: gray;
+    line-height: .5;
 }
-
+footer ul {
+    font-size: 17px;
+}
 footer .items {
     list-style: none;
+}
+
+header {
+    font-family: 'Ovo', serif;
+    font-size: 20px;
+}
+
+.wrapper p {
+    font-family: 'Muli', sans-serif;
+    font-size: 17px; 
 }
 
 section #first {
