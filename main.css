@@ -181,9 +181,8 @@ footer ul {
 }
 .social {
     display: flex;
-  }
-  
-  .social li {
+}
+.social li {
     align-self: center;
     margin: 0px 20px 20px;
   }
