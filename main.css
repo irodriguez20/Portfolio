@@ -10,10 +10,12 @@
 .wrapper {
  min-height: 100vh; /* will cover the 100% of viewport */
  overflow: hidden;
- display: block;
+ display: flex;
+ flex-direction: column;
  position: relative;
- padding-bottom: 100px; /* height of your footer */
+ padding-bottom: 100px; 
 }
+
 
 html,
 body {
@@ -25,7 +27,7 @@ body {
     color: #07292e;
     text-align: center;
     line-height: 1.5;
-    vertical-align: baseline;
+    vertical-align: baseline; 
 }
 
 body {
@@ -40,18 +42,20 @@ ul {
     list-style: none;
 }
 
-html {
+body {
     background-color: #e9d2c4;
-}
+} 
 
-.intro {
+
+/* .intro {
     background-color: #e84e3e;
-}
+} */
 .intro header {
     font-size: 30px;
 }
 .intro p {
     font-size: 19px;
+    text-align: center;
 }
 .intro img {
     width: 100%;
@@ -59,7 +63,7 @@ html {
     margin-bottom: 0;
 }
 
-.imageMain img {
+.contentBio img {
     width: 100%;
 }
 
@@ -74,12 +78,23 @@ html {
 header {
     font-family: 'Gayathri', sans-serif;
     font-size: 20px;
+    text-align: center; 
+    border-radius: 3px;
 }
 
 .wrapper p {
     font-family: 'Muli', sans-serif;
     font-size: 17px; 
-    line-height: .5;
+    line-height: 1.5;
+    margin: 30px;
+}
+
+#aboutMe p {
+    text-align: left;
+}
+
+.contentProjects p {
+    text-align: left;
 }
 
 h3 {
@@ -88,17 +103,46 @@ h3 {
 }
 section {
     min-height: 200px;
-    padding: 6% 0;
+    padding: 0% 0;
 }
 
 /* #projects {
     background-color: #a9af8d;
 } */
 
+* {
+    text-decoration: none;
+    list-style: none;
+}
+
+.project-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+button {
+    padding: 10px;
+    border: #07292e;
+    background-color: #07292e;
+    color: #e9d2c4;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 40px;
+}
+
+button:hover {
+    background-color: #a9af8d
+}
+
 footer {
     position: absolute;
     font-family: 'Gayathri', sans-serif;
-    background-color: #e9d2c4;
+   /* background-color: #e9d2c4; */
     bottom: 0%;
     width: 100%;
 }
@@ -110,22 +154,48 @@ footer ul {
     list-style: none;
 }
 
+.fa-2x {
+    font-size: 2em;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-github:before {
+    content: "\f09b";
+} 
+.fa-linkedin:before {
+    content: "\f0e1";
+}
+.social-links {
+    color: #01213b;
+}
+.social-links:hover {
+    color: #8e6559;
+}
+.social {
+    display: flex;
+  }
+  
+  .social li {
+    align-self: center;
+    margin: 0px 20px 20px;
+  }
 
 @media screen and (min-width: 600px) {
-    html {
-        background-color: #e9d2c4;
-    }
     .intro {
         display: block;
-        text-align: left;
-    }
-
-    .intro header {
-        background-color: #e84e3e;
     }
 
     .wrapper p {
         font-size: 19px;
+        text-align: left;
     }
 
     header, p {
@@ -139,6 +209,10 @@ footer ul {
         font-size: 25px;
     }
 
+    h1, h2 {
+        margin-left: 5px;
+    }
+
     .content {
         display: flex;
         flex-direction: column;
@@ -150,6 +224,10 @@ footer ul {
         flex-direction: column;
         align-content: center;
         
+    }
+
+    #aboutMe {
+        background-color: #a9af8d;
     }
 
     h3 {
@@ -166,10 +244,7 @@ footer ul {
 
 }
 
-@media screen and (min-width: 980px) {
-    html {
-        background-color: #e9d2c4;
-    }
+@media screen and (min-width: 900px) {
 
     header {
         float: left;
@@ -178,7 +253,7 @@ footer ul {
     }
       
     /* Clear floats after the columns */
-    .contentWrap:after {
+    .wrapper:after {
         content: "";
         display: table;
         clear: both;
@@ -186,11 +261,22 @@ footer ul {
 
     .wrapper p {
         font-size: 22px;
+        line-height: 1;
+        text-align: left;
     }
 
-    h1, .intro p {
+    header {
         background: #e84e3e;
     } 
+
+    img {
+        border-radius: 3px;
+    }
+
+    #aboutMe {
+        margin-bottom: 30px;
+        background-color: #e9d2c4;
+    }
 
     .content {
         display: flex;
