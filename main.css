@@ -50,14 +50,14 @@ body {
 /* .intro {
     background-color: #e84e3e;
 } */
-.intro header {
+#intro header {
     font-size: 30px;
 }
-.intro p {
+#intro p {
     font-size: 19px;
     text-align: center;
 }
-.intro img {
+#intro img {
     width: 100%;
     padding: 0;
     margin-bottom: 0;
@@ -67,6 +67,9 @@ body {
  .wrapper section > header ul.actions {
      display: none;
     }  
+  body ul.arrow-up {
+        display: none;
+    }
 }
 
 .contentBio img {
@@ -198,7 +201,7 @@ footer ul {
 }
 
 @media screen and (min-width: 600px) {
-    .intro {
+    #intro {
         display: block;
     }
 
@@ -294,6 +297,28 @@ footer ul {
         color:#a9af8d;
     }
     ul.actions span {
+        display: none;
+    }
+
+    body ul.arrow-up {
+        justify-content: center;
+    }
+   
+    ul.actions {
+        display: flex;
+        cursor: default;
+        /* margin-left: -1rem; */
+        padding-left: 0px;
+        list-style: none;
+    }
+    ul.arrow-up a {
+        color:#01213b;
+    }
+
+    ul.arrow-up a:hover {
+        color:#a9af8d;
+    }
+    ul.arrow-up span {
         display: none;
     }
 
