@@ -63,6 +63,12 @@ body {
     margin-bottom: 0;
 }
 
+@media screen and (max-width: 899PX) {
+ .wrapper section > header ul.actions {
+     display: none;
+    }  
+}
+
 .contentBio img {
     width: 100%;
 }
@@ -185,7 +191,11 @@ footer ul {
 .social li {
     align-self: center;
     margin: 0px 20px 20px;
-  }
+}
+
+.copyRight p {
+    font-family: 'Gayathri', sans-serif;
+}
 
 @media screen and (min-width: 600px) {
     .intro {
@@ -262,6 +272,29 @@ footer ul {
         font-size: 22px;
         line-height: 1;
         text-align: left;
+    }
+
+    .wrapper section > header ul.actions {
+        justify-content: flex-end;
+    }
+   
+    ul.actions {
+        display: flex;
+        margin-right: 30px;
+        cursor: default;
+        /* margin-left: -1rem; */
+        padding-left: 0px;
+        list-style: none;
+    }
+    ul.actions a {
+        color:#01213b;
+    }
+
+    ul.actions a:hover {
+        color:#a9af8d;
+    }
+    ul.actions span {
+        display: none;
     }
 
     header {
