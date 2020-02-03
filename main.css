@@ -398,8 +398,8 @@ footer ul {
 .modal-content {
   margin: auto;
   display: block;
-  width: 80%;
-  max-width: 700px;
+  width: 100%;
+  max-width: 875px;
 }
 
 /* Caption of Modal Image */
