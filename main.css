@@ -369,13 +369,13 @@ footer ul {
   }
 }
 
-#myImg {
+.gallery img {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
 }
 
-#myImg:hover {
+.gallery img:hover {
   opacity: 0.7;
 }
 
