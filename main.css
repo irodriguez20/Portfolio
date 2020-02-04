@@ -50,7 +50,7 @@ ul {
 }
 #intro img {
   width: 100%;
-  padding: 0;
+  padding: 10px;
   margin-bottom: 0;
 }
 
@@ -327,7 +327,8 @@ footer ul {
   }
 
   header {
-    background: #e84e3e;
+    background: #4687ad;
+    color: whitesmoke;
   }
 
   img {
@@ -404,6 +405,9 @@ footer ul {
 
 /* Caption of Modal Image */
 #caption {
+  font-family: "Muli", sans-serif;
+  font-size: 17px;
+  line-height: 1.5;
   margin: auto;
   display: block;
   width: 80%;
