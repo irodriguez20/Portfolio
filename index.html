@@ -21,50 +21,71 @@
       <section>
         <section id="intro">
           <header>
+            <nav id="mySidebar" class="sidebar">
+              <a href="javascript:void(0)" class="closebtn" onClick="closeNav()"
+                >X</a
+              >
+              <a href="#aboutMe">About</a>
+              <a href="javascript:void(0)" onClick="expandProjects()">
+                Projects <i class="fa fa-caret-down"></i>
+              </a>
+              <div id="projectsList">
+                <a href="#GOT-App">G.O.T Quiz</a>
+                <a href="#Simply-Satisfied-App">Simply Satisfied</a>
+                <a href="#Secret-Stash-App">Secret Stash</a>
+              </div>
+            </nav>
+            <div
+              id="hamburger-menu"
+              class="hamburger-menu"
+              class="openbtn"
+              onclick="openNav()"
+            >
+              <i class="fas fa-bars"></i>
+            </div>
+            <div class="content-portrait">
+              <img
+                class="portrait"
+                src="headshot.jpeg"
+                alt="Portrait of India"
+              />
+            </div>
+            <!-- <ul> -->
             <h1>Hi, I'm India.</h1>
-            <p>Software Engineer</p>
-            <ul class="actions">
-              <li>
-                <a href="#aboutMe" class="arrow scrolly"
-                  ><i
-                    class="fas fa-arrow-circle-down"
-                    style="font-size:40px"
-                  ></i
-                  ><span class="label">Next</span></a
-                >
-              </li>
-            </ul>
+            <h3>Software Engineer</h3>
+
+            <!-- </ul> -->
+            <!-- <div class="content-portrait">
+              <img
+                class="portrait"
+                src="headshot.jpeg"
+                alt="Portrait of India"
+              />
+            </div> -->
           </header>
-          <div class="content">
-            <img src="headshot.jpeg" alt="Portrait of India" />
-          </div>
-        </section>
-        <section id="aboutMe">
-          <header>
-            <h2>About Me</h2>
-          </header>
-          <div class="contentBio">
-            <p>
-              I'm an artist who's love for creation, problem solving and
-              challenges brought her to the world of coding. I love being able
-              to create ascetically pleasing designs and enjoy learning new
-              languages and libraries to enhance my skills as a Software
-              Engineer. When I'm not coding, you'll find me in the gym, spending
-              quality time with my daughter and husband or working on a new art
-              project.
-            </p>
-            <!-- <img
-              src="background.jpeg"
-              alt="Hanging Lake in Glenwood Canyon, Colorado"
-            /> -->
-          </div>
+          <section id="aboutMe" class="aboutMe">
+            <header>
+              <h2>About Me</h2>
+            </header>
+            <div class="contentBio">
+              <p>
+                I'm an artist who's love for creation, problem solving and
+                challenges brought her to the world of coding. I love being able
+                to create ascetically pleasing designs and enjoy learning new
+                languages and libraries to enhance my skills as a Software
+                Engineer. When I'm not coding, you'll find me in the gym,
+                spending quality time with my daughter and husband or working on
+                a new art project.
+              </p>
+            </div>
+          </section>
         </section>
         <section id="projects">
           <header>
             <h2>Projects</h2>
           </header>
           <div class="contentProjects">
-            <section class="GOT-App">
+            <section id="GOT-App" class="projectsCard">
               <div class="content-projects">
                 <div class="gallery">
                   <img
@@ -102,7 +123,7 @@
                 </div>
               </div>
             </section>
-            <section class="Simply-Satisfied-App">
+            <section id="Simply-Satisfied-App" class="projectsCard">
               <div class="content-projects">
                 <div class="gallery">
                   <img
@@ -160,7 +181,7 @@
                 </div>
               </div>
             </section>
-            <section class="Secret-Stash-App">
+            <section id="Secret-Stash-App" class="projectsCard">
               <div class="content-projects">
                 <div class="gallery">
                   <img
@@ -273,8 +294,10 @@
             </li>
           </ul>
           <div class="copyRight">
-            <i class="far fa-copyright" style="font-size:16px"></i> India
-            Rodriguez 2019
+            <p>
+              <i class="far fa-copyright" style="font-size:16px"></i> India
+              Rodriguez 2020
+            </p>
           </div>
         </footer>
       </section>

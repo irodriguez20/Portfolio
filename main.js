@@ -26,3 +26,19 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function () {
     modal.style.display = "none";
 }
+
+
+//Sidebar Menu
+function openNav() {
+    document.getElementById("mySidebar").style.width = "150px";
+    document.getElementById("hamburger-menu").style.marginLeft = "150px";
+}
+
+function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("hamburger-menu").style.marginLeft = "0";
+}
+
+function expandProjects() {
+    document.getElementById("projectsList").style.display = "inline-block";
+}
